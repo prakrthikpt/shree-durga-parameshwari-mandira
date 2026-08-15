@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fffaf0;
+  color: #3b1f0f;
+}
+
+.app {
+  width: 100%;
+}
+
+/* NAVBAR */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  padding: 0 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(54, 24, 7, 0.96);
+  z-index: 1000;
+}
+
+.logo {
+  color: #ffd166;
+  font-family: "Cinzel", serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 28px;
+}
+
+.navbar nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #ffd166;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px 60px;
+
+  background:
+    linear-gradient(
+      rgba(55, 20, 5, 0.78),
+      rgba(55, 20, 5, 0.78)
+    ),
+    radial-gradient(circle at center, #b95d20, #321406);
+}
+
+.hero-content {
+  max-width: 850px;
+  color: white;
+}
+
+.welcome {
+  color: #ffd166;
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-family: "Cinzel", serif;
+  font-size: clamp(50px, 8vw, 90px);
+  line-height: 1.05;
+  color: #ffd166;
+}
+
+.hero h2 {
+  font-family: "Cinzel", serif;
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+  color: #fff3d0;
+}
+
+.hero-buttons {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 13px 27px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.primary {
+  background: #ffd166;
+  color: #421b08;
+}
+
+.secondary {
+  border: 1px solid #ffd166;
+  color: #ffd166;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* COMMON SECTION */
+
+.section {
+  padding: 100px 7%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title p {
+  color: #b85c18;
+  letter-spacing: 3px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.section-title h2 {
+  font-family: "Cinzel", serif;
+  font-size: 42px;
+  margin-top: 8px;
+  color: #552308;
+}
+
+/* ABOUT */
+
+.about {
+  background: #fffaf0;
+}
+
+.about-content {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-image {
+  height: 430px;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      rgba(122, 47, 12, 0.7),
+      rgba(58, 20, 5, 0.8)
+    );
+}
+
+.temple-symbol {
+  font-size: 150px;
+  color: #ffd166;
+  text-shadow: 0 0 30px #ff9d00;
+}
+
+.about-text h3 {
+  font-family: "Cinzel", serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.about-text > p {
+  line-height: 1.8;
+  margin-bottom: 18px;
+  color: #6b4934;
+}
+
+.features {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.features div {
+  flex: 1;
+  padding: 18px;
+  border-radius: 12px;
+  background: #fff0cc;
+  text-align: center;
+}
+
+.features span {
+  font-size: 28px;
+}
+
+.features h4 {
+  margin: 8px 0;
+}
+
+.features p {
+  font-size: 12px;
+}
+
+/* POOJA */
+
+.pooja {
+  background: #fff1d5;
+}
+
+.cards {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  padding: 35px 22px;
+  text-align: center;
+  border-radius: 15px;
+  transition: 0.3s;
+  box-shadow: 0 8px 25px rgba(70, 30, 5, 0.08);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card-icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-family: "Cinzel", serif;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #765640;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* EVENTS */
+
+.events {
+  background: #fffaf0;
+}
+
+.event-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.event-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  background: white;
+  padding: 25px;
+  margin-bottom: 18px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(60, 30, 10, 0.08);
+}
+
+.event-date {
+  min-width: 75px;
+  height: 75px;
+  border-radius: 12px;
+  background: #7c2f0c;
+  color: #ffd166;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-date span {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.event-date small {
+  font-size: 11px;
+}
+
+.event-card h3 {
+  font-family: "Cinzel", serif;
+  margin-bottom: 7px;
+}
+
+.event-card p {
+  color: #765640;
+}
+
+/* GALLERY */
+
+.gallery {
+  background: #fff1d5;
+}
+
+.gallery-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.gallery-item {
+  height: 220px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #8b3e13, #3b1607);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+  transition: 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+
+/* CONTACT */
+
+.contact {
+  background: #fffaf0;
+}
+
+.contact-container {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.contact-card {
+  padding: 35px;
+  text-align: center;
+  background: #fff0cc;
+  border-radius: 15px;
+}
+
+.contact-card span {
+  font-size: 40px;
+}
+
+.contact-card h3 {
+  font-family: "Cinzel", serif;
+  margin: 12px 0;
+}
+
+.contact-card p {
+  color: #765640;
+  line-height: 1.7;
+}
+
+/* FOOTER */
+
+footer {
+  background: #321406;
+  color: white;
+  text-align: center;
+  padding: 50px 20px 20px;
+}
+
+.footer-logo {
+  color: #ffd166;
+  font-family: "Cinzel", serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+footer p {
+  margin: 10px 0;
+  color: #e8cfa8;
+}
+
+.blessing {
+  color: #ffd166;
+  margin-top: 25px;
+}
+
+.copyright {
+  border-top: 1px solid rgba(255,255,255,0.15);
+  margin-top: 30px;
+  padding-top: 20px;
+  font-size: 12px;
+  color: #bca68d;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .navbar nav {
+    display: none;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .section {
+    padding: 70px 20px;
+  }
+
+  .section-title h2 {
+    font-size: 32px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .event-card {
+    align-items: flex-start;
+  }
+
+}
