@@ -7,7 +7,8 @@ function App() {
       {/* Navbar */}
       <header className="navbar">
         <div className="logo">
-          🛕 <span>Shree Durga Parameshwari</span>
+          🛕 <span>Sri Durgaparameshwari Seva Samithi(R),MUGRODI
+</span>
         </div>
 
         <nav>
@@ -26,12 +27,12 @@ function App() {
           <p className="welcome">🙏 OM SRI DURGA PARAMESHWARI NAMAH 🙏</p>
 
           <h1>
-            Shree Durga
+            Sri Durgaparameshwari
             <br />
-            Parameshwari
+            Seva Samithi (R)
           </h1>
 
-          <h2>Register Padavu Mugrody</h2>
+          <h2>Padavu Mugrodi </h2>
 
           <p>
             Welcome to the divine abode of
