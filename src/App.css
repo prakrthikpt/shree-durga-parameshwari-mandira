@@ -94,6 +94,27 @@ body {
   line-height: 1.05;
   color: #ffd166;
 }
+.temple-title {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 1.1;
+  font-size: 70px;
+}
+@media (max-width: 768px) {
+  .temple-title {
+    font-size: 42px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .temple-title {
+    font-size: 32px;
+    padding: 0 15px;
+  }
+}
 
 .hero h2 {
   font-family: "Cinzel", serif;

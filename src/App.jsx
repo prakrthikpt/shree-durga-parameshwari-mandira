@@ -26,9 +26,9 @@ function App() {
         <div className="hero-content">
           <p className="welcome">🙏 OM SRI DURGA PARAMESHWARI NAMAH 🙏</p>
 
-          <h1>
-            Sri Durgaparameshwari
-            <br />
+          <h1 className="temple-titel">
+            Sri Durgaparameshwari 
+            <br/>
             Seva Samithi (R)
           </h1>
 
@@ -36,7 +36,7 @@ function App() {
 
           <p>
             Welcome to the divine abode of
-            <strong> Shree Durga Parameshwari</strong>.
+            <strong> Shree Durgaparameshwari</strong>.
             May the blessings of the Goddess bring peace,
             prosperity and happiness to every devotee.
           </p>
