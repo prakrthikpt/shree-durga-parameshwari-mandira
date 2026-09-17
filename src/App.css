@@ -853,3 +853,216 @@ body {
   padding-top: 100px;
   padding-bottom: 60px;
 }
+
+
+/* FINAL MOBILE FIX */
+
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .navbar {
+    padding: 0 15px;
+  }
+
+  .logo {
+    font-size: 14px;
+    max-width: 220px;
+  }
+
+  /* Hero */
+  .hero {
+    flex-direction: column;
+    gap: 30px;
+    padding: 100px 20px 50px;
+    text-align: center;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+    flex: none;
+  }
+
+  .hero-content .temple-titel {
+    font-size: 26px !important;
+    line-height: 1.2;
+    max-width: 100%;
+    overflow-wrap: normal;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 90%;
+    flex: none;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 400px;
+    max-width: 400px;
+  }
+
+  /* Sections */
+  .section {
+    padding: 90px 20px 50px;
+    min-height: auto;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .section-title h2 {
+    font-size: 30px;
+  }
+
+  /* About */
+  .about-content {
+    flex-direction: column;
+    gap: 35px;
+    padding: 0;
+  }
+
+  .about-image,
+  .about-text {
+    width: 100%;
+  }
+
+  .about-image img {
+    width: 100%;
+    height: 350px;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  /* Cards */
+  .cards {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  /* Events */
+  .event-container {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .gallery-item {
+    height: 280px;
+  }
+
+  /* Contact */
+  .contact-container {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .contact-card {
+    width: 100%;
+    min-height: 220px;
+  }
+
+  /* Buttons */
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons .btn {
+    width: 80%;
+    text-align: center;
+  }
+
+  /* Popup */
+  .image-popup {
+    padding: 15px;
+  }
+
+  .image-popup img,
+  .image-popup video {
+    max-width: 95%;
+    max-height: 80vh;
+  }
+
+  .close-popup {
+    top: 15px;
+    right: 15px;
+  }
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 480px) {
+
+  .logo {
+    font-size: 12px;
+    max-width: 180px;
+  }
+
+  .hero {
+    padding: 90px 15px 40px;
+  }
+
+  .hero-content .temple-titel {
+    font-size: 24px !important;
+  }
+
+  .hero h2 {
+    font-size: 20px;
+  }
+
+  .hero-image {
+    max-width: 95%;
+  }
+
+  .hero-image img {
+    height: 330px;
+  }
+
+  .section {
+    padding: 85px 15px 40px;
+  }
+
+  .section-title h2 {
+    font-size: 27px;
+  }
+
+  .about-text h3 {
+    font-size: 23px;
+  }
+
+  .card {
+    padding: 30px 18px;
+  }
+
+  .event-header h3 {
+    font-size: 19px;
+  }
+
+  .gallery-item {
+    height: 250px;
+  }
+
+  .contact-card {
+    padding: 25px 18px;
+  }
+}
