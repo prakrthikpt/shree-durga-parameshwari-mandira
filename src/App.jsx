@@ -184,7 +184,7 @@ function App() {
 
       <div className="about-image">
         <img
-          src="public/images/mandira-about.jpeg"
+          src="/images/mandira-about.jpeg"
           alt="Sri Durgaparameshwari Temple"
         />
       </div>
