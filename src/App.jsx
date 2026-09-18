@@ -1,6 +1,7 @@
 
 import { useState,useEffect } from "react";
 import "./App.css";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("home");
@@ -1712,6 +1713,8 @@ function App() {
       : "© 2026 ಶ್ರೀ ದುರ್ಗಾ ಪರಮೇಶ್ವರಿ ದೇವಸ್ಥಾನ. ಎಲ್ಲಾ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ."}
   </div>
 </footer>
+
+<Analytics/>
 
     </div>
   );
