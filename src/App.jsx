@@ -7,52 +7,87 @@ function App() {
   const [selectedImage, setSelectedImage] = useState(null);
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [language, setLanguage] = useState("en");
+  const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
   window.scrollTo(0, 0);
 }, [currentPage]);
   return (
     <div className="app">
 
-      {/* Navbar */}
       <header className="navbar">
+
         <div className="logo">
-          🛕
-          <span>
-            {language === "en"
-              ? "Sri Durgaparameshwari Seva Samithi(R),MUGRODI"
-              : "ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ಸೇವಾ ಸಮಿತಿ (ರಿ), ಮುಗ್ರೋಡಿ"}
-          </span>
+          🛕 <span>Sri Durgaparameshwari Seva Samithi(R),MUGRODI</span>
         </div>
 
-         <nav>
-            <a href="#home" onClick={() => setCurrentPage("home")}>
-              {language === "en" ? "Home" : "ಮುಖಪುಟ"}
-            </a>
-            <a href="#about" onClick={() => setCurrentPage("about")}>
-              {language === "en" ? "About" : "ನಮ್ಮ ಬಗ್ಗೆ"}
-            </a>
-            <a href="#pooja" onClick={() => setCurrentPage("pooja")}>
-              {language === "en" ? "Pooja & Seva" : "ಪೂಜೆ ಮತ್ತು ಸೇವೆ"}
-            </a>
-            <a href="#classes" onClick={() => setCurrentPage("classes")}>
-              {language === "en"
-                ? "Classes & Activities"
-                : "ತರಗತಿಗಳು ಮತ್ತು ಚಟುವಟಿಕೆಗಳು"}
-            </a>
-            <a href="#events" onClick={() => setCurrentPage("events")}>
-              {language === "en" ? "Events" : "ಕಾರ್ಯಕ್ರಮಗಳು"}
-            </a>
-            <a href="#gallery" onClick={() => setCurrentPage("gallery")}>
-              {language === "en" ? "Gallery" : "ಚಿತ್ರಸಂಪುಟ"}
-            </a>
-            <a href="#contact" onClick={() => setCurrentPage("contact")}>
-              {language === "en" ? "Contact" : "ಸಂಪರ್ಕ"}
-            </a>
-         </nav>
-            <div className="language-switch">
-              <button onClick={() => setLanguage("en")}>English</button>
-              <button onClick={() => setLanguage("kn")}>ಕನ್ನಡ</button>
-            </div>
+        {/* Desktop Menu */}
+        <nav className={menuOpen ? "mobile-open" : ""}>
+      
+                <a href="#home" onClick={() => {
+            setCurrentPage("home");
+            setMenuOpen(false);
+          }}>
+            {language === "en" ? "Home" : "ಮುಖಪುಟ"}
+          </a>
+
+          <a href="#about" onClick={() => {
+            setCurrentPage("about");
+            setMenuOpen(false);
+          }}>
+            {language === "en" ? "About" : "ನಮ್ಮ ಬಗ್ಗೆ"}
+          </a>
+
+          <a href="#pooja" onClick={() => {
+                  setCurrentPage("pooja");
+            setMenuOpen(false);
+          }}>
+                  {language === "en" ? "Pooja & Seva" : "ಪೂಜೆ ಮತ್ತು ಸೇವೆ"}
+          </a>
+
+          <a href="#classes" onClick={() => {
+            setCurrentPage("classes");
+                  setMenuOpen(false);
+          }}>
+            {language === "en" ? "Classes & Activities" : "ತರಗತಿಗಳು ಮತ್ತು ಚಟುವಟಿಕೆಗಳು"}
+                </a>
+
+          <a href="#events" onClick={() => {
+            setCurrentPage("events");
+            setMenuOpen(false);
+          }}>
+            {language === "en" ? "Events" : "ಕಾರ್ಯಕ್ರಮಗಳು"}
+          </a>
+
+          <a href="#gallery" onClick={() => {
+            setCurrentPage("gallery");
+                  setMenuOpen(false);
+          }}>
+            {language === "en" ? "Gallery" : "ಚಿತ್ರಸಂಪುಟ"}
+          </a>
+
+          <a href="#contact" onClick={() => {
+            setCurrentPage("contact");
+            setMenuOpen(false);
+          }}>
+            {language === "en" ? "Contact" : "ಸಂಪರ್ಕ"}
+          </a>
+
+          {/* Language */}
+                <button onClick={() => setLanguage("en")}>English</button>
+
+          <button onClick={() => setLanguage("kn")}>ಕನ್ನಡ</button>
+
+        </nav>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="menu-toggle"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          ☰
+        </button>
+
       </header>
 
       {/* Hero Section */}
@@ -1131,6 +1166,319 @@ function App() {
         />
       </div>
 
+      {/* Photo 13 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery13.jpeg")}
+      >
+        <img
+          src="/images/gallery13.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+      {/* Photo 14 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery14.jpeg")}
+      >
+        <img
+          src="/images/gallery14.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+      {/* Photo 15 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery15.jpeg")}
+      >
+        <img
+          src="/images/gallery15.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 16 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery16.jpeg")}
+      >
+        <img
+          src="/images/gallery16.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 17 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery17.jpeg")}
+      >
+        <img
+          src="/images/gallery17.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 18 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery18.jpeg")}
+      >
+        <img
+          src="/images/gallery18.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 19 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery19.jpeg")}
+      >
+        <img
+          src="/images/gallery19.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 20 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery20.jpeg")}
+      >
+        <img
+          src="/images/gallery20.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 21 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery21.jpeg")}
+      >
+        <img
+          src="/images/gallery21.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 22 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery22.jpeg")}
+      >
+        <img
+          src="/images/gallery22.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 23 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery23.jpeg")}
+      >
+        <img
+          src="/images/gallery23.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 24 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery24.jpeg")}
+      >
+        <img
+          src="/images/gallery24.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 25 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery25.jpeg")}
+      >
+        <img
+          src="/images/gallery25.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 26 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery26.jpeg")}
+      >
+        <img
+          src="/images/gallery26.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 27 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery27.jpeg")}
+      >
+        <img
+          src="/images/gallery27.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 28 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery28.jpeg")}
+      >
+        <img
+          src="/images/gallery28.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 29 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery29.jpeg")}
+      >
+        <img
+          src="/images/gallery29.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 30 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery30.jpeg")}
+      >
+        <img
+          src="/images/gallery30.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 31 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery31.jpeg")}
+      >
+        <img
+          src="/images/gallery31.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 32 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery32.jpeg")}
+      >
+        <img
+          src="/images/gallery32.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 33 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery33.jpeg")}
+      >
+        <img
+          src="/images/gallery33.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
     </div>
 
     {/* Image Popup */}
@@ -1214,9 +1562,12 @@ function App() {
         </h3>
 
         <p>
+          <strong>
+          
           {language === "en"
             ? "Sri Durgaparameshwari Seva Samithi(R),MUGRODI, Padavu Mugrodi, Mangaluru, Karnataka"
             : "ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ಸೇವಾ ಸಮಿತಿ (ರಿ), ಮುಗ್ರೋಡಿ, ಪಡುವು ಮುಗ್ರೋಡಿ, ಮಂಗಳೂರು, ಕರ್ನಾಟಕ"}
+          </strong>
         </p>
         
         <a
@@ -1240,9 +1591,17 @@ function App() {
         </h3>
 
         <p>
-          {language === "en" ? "Morning: 6:00 AM – 12:00 PM" : "ಬೆಳಿಗ್ಗೆ: 6:00 AM – 12:00 PM"}
+          <strong>
+
+          {language === "en" ? "Friday morning: 6:00 AM – 8:00 PM" : "ಶುಕ್ರವಾರ ಬೆಳಿಗ್ಗೆ: 6:00 AM – 8:00 PM"}
           <br />
-          {language === "en" ? "Evening: 5:00 PM – 8:00 PM" : "ಸಂಜೆ: 5:00 PM – 8:00 PM"}
+          {language === "en" ? "Friday evening: 3:00 PM – 9:30 PM" : "ಶುಕ್ರವಾರ ಸಂಜೆ: 3:00 PM – 9:30 PM"}
+          <br />
+          {language === "en" ? "Every morning: 6:00 AM – 8:00 AM" : "ಪ್ರತಿದಿನ ಬೆಳಿಗ್ಗೆ: 6:00 AM – 8:00 AM"}
+          <br />
+          {language === "en" ? "Every evening: 5:00 PM – 8:00 PM" : "ಪ್ರತಿದಿನ ಸಂಜೆ: 5:00 PM – 8:00 PM"}
+          
+          </strong>
         </p>
       </div>
 
