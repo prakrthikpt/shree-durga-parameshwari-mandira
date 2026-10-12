@@ -11,11 +11,11 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background: #fffaf0;
+  margin: 0;
+  padding: 0;
+  background: #fff8e9;
   color: #3b1f0f;
-  overflow-x: hidden;
-  overflow-y: auto;
+  font-family: "Poppins", sans-serif;
 }
 
 .app {
@@ -23,44 +23,149 @@ body {
   min-height: 100vh;
 }
 
-/* ================= NAVBAR ================= */
+
+/* NAVBAR */
 
 .navbar {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  height: 75px;
-  padding: 0 5%;
+  height: 90px;
+  padding: 0 20px;
+  box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background: rgba(54, 24, 7, 0.96);
+  justify-content: space-between;
+  gap: 18px;
+  background: #3b2112;
   z-index: 1000;
+  border-bottom: 2px solid #e8c36b;
 }
 
+/* LOGO */
+
 .logo {
-  color: #ffd166;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+}
+
+.temple-logo {
+  font-size: 38px;
+  flex-shrink: 0;
+}
+
+.logo-divider {
+  width: 1px;
+  height: 38px;
+  background: #c89d48;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  color: #f5d17b;
   font-family: "Cinzel", serif;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 700;
   white-space: nowrap;
 }
 
+/* NAVIGATION LINKS */
+
 .navbar nav {
   display: flex;
-  gap: 24px;
+  align-items: center;
+  gap: 12px;
+  flex: 0 0 auto;
 }
 
 .navbar nav a {
+  color: #fff8e9;
   text-decoration: none;
-  color: white;
-  font-size: 14px;
-  transition: 0.3s;
+  font-size: 18px;
+  font-weight: 500;
   white-space: nowrap;
+  transition: color 0.3s ease;
 }
 
 .navbar nav a:hover {
+  color: #f5d17b;
+}
+
+/* LANGUAGE SWITCH */
+
+.language-switch {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px;
+  border: 1px solid #94713b;
+  border-radius: 30px;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.language-switch button {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 25px;
+  background: transparent;
+  color: #fff8e9;
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.language-switch button.active {
+  background: #f5d17b;
+  color: #3b2112;
+  font-weight: 600;
+}
+
+
+/* Mobile Menu Button - hidden on desktop */
+.menu-toggle {
+  display: none ;
+  background: none;
+  border: none;
   color: #ffd166;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.temple-marquee {
+  width: 100%;
+  overflow: hidden;
+  background: #fff1d5;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 90px;
+  border-bottom: 1px solid #e6c27a;
+}
+
+.marquee-text {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  font-family: "Cinzel", serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #8b4a12;
+  animation: templeScroll 40s linear infinite;
+}
+
+@keyframes templeScroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 /* ================= HERO ================= */
@@ -71,7 +176,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 50px;
-  padding: 120px 8% 60px;
+  padding: 30px 8% 60px;
 
   background:
     linear-gradient(
@@ -169,7 +274,7 @@ body {
 .hero-image img {
   width: 100%;
   max-width: 500px;
-  height: 540px;
+  height: 600px;
   object-fit: cover;
   border-radius: 20px;
 }
@@ -177,17 +282,25 @@ body {
 /* ================= COMMON SECTION ================= */
 
 .section {
+  background: linear-gradient(
+    135deg,
+    #fffaf0 0%,
+    #fff4df 50%,
+    #fffaf0 100%
+  );
+  padding: 30px 7% 60px;
   min-height: calc(100vh - 75px);
-  padding: 100px 7% 60px;
+  box-sizing: border-box;
 }
+
 
 .section-title {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .section-title p {
-  color: #b85c18;
+  color: #a66b22;
   letter-spacing: 3px;
   font-size: 13px;
   font-weight: 600;
@@ -197,7 +310,17 @@ body {
   font-family: "Cinzel", serif;
   font-size: 42px;
   margin-top: 8px;
-  color: #552308;
+  color: #4a2410;
+}
+
+/* GALLERY HEADING */
+
+#gallery .section-title p {
+  color: #ffd166;
+}
+
+#gallery .section-title h2 {
+  color: #e1a06b;
 }
 
 /* ================= ABOUT ================= */
@@ -207,32 +330,49 @@ body {
 }
 
 .about-content {
-  max-width: 1100px;
-  margin: 50px auto 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: start;
+  column-gap: 25px;
+  
 }
 
 .about-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  grid-column: 1;
+  grid-row: 1 / span 2;
 }
 
+
 .about-image img {
-  width: 100%;
-  max-width: 480px;
-  height: 600px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.mandira-image {
+  width: 90%;
+  height: 650px;
   object-fit: cover;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.yakshagana-image {
+  width: 85%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .about-text {
-  flex: 1;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.about-full-text {
+  grid-column: 2;
+  grid-row: 2;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .about-text h3 {
@@ -245,6 +385,7 @@ body {
   line-height: 1.8;
   margin-bottom: 15px;
 }
+
 
 /* FEATURES */
 
@@ -277,6 +418,297 @@ body {
   line-height: 1.5;
   margin: 0;
 }
+
+/* ================= MEMBERS ================= */
+
+.members {
+  background: #fff1d5;
+  padding: 80px 5%;
+}
+
+/* MAIN SECTION HEADING */
+
+.members .section-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.members .section-title p {
+  color: #c47a00;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.members .section-title h2 {
+  color: #3b1f0f;
+  font-size: 30px;
+  margin: 0;
+}
+
+/* COMMITTEE GROUP HEADINGS */
+
+.member-group-title {
+  text-align: center;
+  margin: 45px 0 25px;
+}
+
+.member-group-title h2 {
+  color: #3b1f0f;
+  font-size: 26px;
+  margin: 0;
+}
+
+/* MEMBER GRID */
+
+.member-grid {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+/* MEMBER CARD */
+
+.member-card {
+  background: white;
+  padding: 20px 10px;
+  text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(59, 31, 15, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 0;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(59, 31, 15, 0.18);
+}
+
+/* MEMBER ICON */
+
+.member-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff1d5;
+  border: 1px solid #ead7b6;
+  border-radius: 50%;
+  font-size: 28px;
+}
+
+/* MEMBER POSITION */
+
+.member-card h3 {
+  color: #8b4b14;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 10px 5px;
+}
+
+/* MEMBER NAME */
+
+.member-card p {
+  color: #3b1f0f;
+  margin: 0 5px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+/* MEMBER PHOTO - KEEP FOR FUTURE USE */
+
+.member-photo {
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+}
+
+.member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* MAIN COMMITTEE - POSITION CARDS */
+
+.main-member-grid {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.main-member-card {
+  min-height: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 22px 12px;
+  border: 1px solid #ead7b6;
+}
+
+/* First two cards in the first row */
+.main-member-card:nth-child(1),
+.main-member-card:nth-child(2) {
+  grid-column: span 3;
+}
+
+/* Next four cards in two columns */
+.main-member-card:nth-child(3),
+.main-member-card:nth-child(4),
+.main-member-card:nth-child(5),
+.main-member-card:nth-child(6) {
+  grid-column: span 3;
+}
+
+/* Last card centered */
+.main-member-card:nth-child(7) {
+  grid-column: 2 / span 4;
+}
+
+.main-member-card h3 {
+  color: #8b4b14;
+  font-size: 16px;
+  margin: 0 0 12px;
+}
+
+.main-member-card p {
+  color: #3b1f0f;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+/* EXECUTIVE COMMITTEE LIST */
+
+.executive-member-list {
+  max-width: 1000px;
+  margin: 30px auto 0;
+  padding: 25px 30px;
+  background: #fffdf7;
+  border: 1px solid #ead7b6;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(59, 31, 15, 0.08);
+}
+
+.executive-member-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 0;
+  color: #3b1f0f;
+  font-size: 16px;
+  line-height: 1.6;
+  border-bottom: 1px solid #f0e4d0;
+}
+
+.executive-member-row:last-child {
+  border-bottom: none;
+}
+
+.executive-member-number {
+  min-width: 25px;
+  color: #8b4b14;
+  font-weight: 700;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .member-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .main-member-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .main-member-card:nth-child(n) {
+    grid-column: auto;
+  }
+
+  .main-member-card:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .members .section-title h2 {
+    font-size: 27px;
+  }
+
+  .member-group-title h2 {
+    font-size: 24px;
+  }
+
+  .executive-member-list {
+    padding: 20px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+  .members {
+    padding: 60px 18px;
+  }
+
+  .members .section-title h2 {
+    font-size: 23px;
+  }
+
+  .member-group-title {
+    margin: 35px 0 20px;
+  }
+
+  .member-group-title h2 {
+    font-size: 21px;
+  }
+
+  .member-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .main-member-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-member-card:nth-child(n) {
+    grid-column: auto;
+  }
+
+  .member-card {
+    padding: 24px 15px;
+  }
+
+  .member-card h3 {
+    font-size: 15px;
+  }
+
+  .member-card p {
+    font-size: 16px;
+  }
+
+  .executive-member-list {
+    padding: 15px 18px;
+  }
+
+  .executive-member-row {
+    font-size: 15px;
+  }
+}
+
 
 /* ================= POOJA ================= */
 
@@ -377,7 +809,12 @@ body {
 /* ================= GALLERY ================= */
 
 .gallery {
-  background: #fffaf0;
+  background:
+    linear-gradient(
+      rgba(55, 20, 5, 0.78),
+      rgba(55, 20, 5, 0.78)
+    ),
+    radial-gradient(circle at center, #b95d20, #321406);
 }
 
 .gallery-grid {
@@ -392,8 +829,8 @@ body {
   height: 260px;
   border-radius: 16px;
   overflow: hidden;
-  background: white;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+  box-shadow: 0 8px 20px rgba(205, 199, 199, 0.1);
   transition: 0.3s ease;
   cursor: pointer;
 }
@@ -613,6 +1050,10 @@ footer p {
   .contact-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .menu-toggle {
+  display: block !important;
+  }
 }
 
 /* ================================================= */
@@ -622,16 +1063,29 @@ footer p {
 @media (max-width: 768px) {
 
   /* NAVBAR */
-
   .navbar {
-    height: 70px;
+    height: 75px;
     padding: 0 15px;
   }
 
   .logo {
-    font-size: 13px;
-    max-width: 220px;
-    line-height: 1.2;
+    gap: 7px;
+    margin-left: 0;
+    min-width: 0;
+  }
+
+  .temple-logo {
+    font-size: 30px;
+  }
+
+  .logo-divider {
+    height: 30px;
+  }
+
+  .logo-text {
+    font-size: 12px;
+    white-space: normal;
+    max-width: 210px;
   }
 
   /* HERO */
@@ -706,11 +1160,12 @@ footer p {
 
   .section {
     min-height: auto;
-    padding: 90px 20px 50px;
+    padding: 60px 10px 40px;
   }
 
   .section-title {
     margin-bottom: 40px;
+    margin-top: 10px;
   }
 
   .section-title p {
@@ -721,38 +1176,105 @@ footer p {
     font-size: 30px;
   }
 
-  /* ABOUT */
+ /* ABOUT - MOBILE */
 
-  .about-content {
-    flex-direction: column;
-    gap: 35px;
-    padding: 0;
-    margin-top: 30px;
+.about-content {
+  grid-template-columns: 100px 1fr;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.about-image {
+  width: 100px;
+  gap: 15px;
+}
+
+.about-image img {
+  width: 100px;
+  height: 130px;
+  border-radius: 12px;
+}
+
+.mandira-image {
+  width: 100px;
+  height: 130px;
+}
+
+.yakshagana-image {
+  width: 100px;
+  height: 130px;
+}
+
+.about-text {
+  width: 100%;
+}
+
+.about-text h3 {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.about-text h4 {
+  font-size: 17px;
+}
+
+.about-text p,
+.about-full-text p {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.about-full-text {
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+.features {
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+
+  /* MEMBERS - TABLET AND MOBILE */
+
+  .member-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
   }
 
-  .about-image,
-  .about-text {
+  .main-member-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .main-member-card:nth-child(n) {
+    grid-column: auto;
+  }
+
+  .main-member-card:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .member-group-title {
+    margin: 35px 0 25px;
+  }
+
+  .member-group-title h2 {
+    font-size: 24px;
+  }
+
+  .executive-member-list {
     width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
   }
 
-  .about-image img {
-    width: 100%;
-    max-width: 450px;
-    height: 350px;
+  .executive-member-row {
+    gap: 10px;
+    overflow-wrap: anywhere;
   }
 
-  .about-text h3 {
-    font-size: 25px;
-  }
 
-  .about-text p {
-    font-size: 14px;
-    line-height: 1.7;
-  }
-
-  .features {
-    flex-direction: column;
-  }
 
   /* POOJA */
 
@@ -834,9 +1356,23 @@ footer p {
     height: 65px;
   }
 
-  .logo {
+    .logo {
+    gap: 7px;
+    max-width: calc(100% - 65px);
+    margin-left: 55px;
+    min-width: 0;
+  }
+
+  .logo-text {
     font-size: 11px;
-    max-width: 190px;
+    line-height: 1.3;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: normal;
+  }
+
+  .temple-logo {
+    flex-shrink: 0;
   }
 
   .hero {
@@ -875,6 +1411,53 @@ footer p {
     font-size: 23px;
   }
 
+  .members {
+    padding: 60px 15px;
+  }
+
+  .member-grid,
+  .main-member-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .main-member-card:nth-child(n) {
+    grid-column: auto;
+  }
+
+  .member-card {
+    padding: 24px 15px;
+  }
+
+  .member-card h3 {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .member-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+
+  .member-group-title {
+    margin: 30px 0 20px;
+  }
+
+  .member-group-title h2 {
+    font-size: 21px;
+  }
+
+  .executive-member-list {
+    padding: 15px;
+  }
+
+  .executive-member-row {
+    font-size: 14px;
+    gap: 8px;
+  }
+
+
   .event-header h3 {
     font-size: 19px;
   }
@@ -891,12 +1474,19 @@ footer p {
 /* ================= MOBILE MENU ================= */
 
 .menu-toggle {
-  display: none;
+  display: block;
+  position: absolute;
+  left: 20px;
+  right: auto;
+  font-size: 30px;
   background: none;
   border: none;
   color: #ffd166;
-  font-size: 30px;
   cursor: pointer;
+}
+
+.logo {
+  margin-left: 55px;
 }
 
 /* Mobile */
@@ -904,6 +1494,14 @@ footer p {
 
   .menu-toggle {
     display: block;
+    position: absolute;
+    left: 20px;
+    right: auto;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #ffd166;
+    cursor: pointer;
   }
 
   .navbar {
@@ -914,19 +1512,32 @@ footer p {
   .logo {
     font-size: 13px;
     max-width: 260px;
+    margin-left: 55px;
   }
 
   .navbar nav {
     display: none;
     position: absolute;
     top: 75px;
-    left: 0;
-    width: 100%;
+    left: 10px;
+    right: auto;
+
+    width: 230px;
+
     background: rgba(54, 24, 7, 0.98);
+
     flex-direction: column;
+    align-items: flex-start;
+
     gap: 0;
-    padding: 15px 0;
-    text-align: center;
+    padding: 15px;
+
+    text-align: left;
+
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+
+    z-index: 999;
   }
 
   .navbar nav.mobile-open {
@@ -934,16 +1545,20 @@ footer p {
   }
 
   .navbar nav a {
-    padding: 14px 10px;
+    width: 100%;
+    padding: 12px 10px;
     font-size: 16px;
+    text-align: left;
   }
 
   .navbar nav button {
-    margin: 5px auto;
+    margin: 5px 0;
     width: 100px;
     padding: 8px;
+
     border: 1px solid #ffd166;
     border-radius: 20px;
+
     background: transparent;
     color: #ffd166;
     cursor: pointer;
@@ -1032,4 +1647,254 @@ body {
 
 footer {
   margin-top: auto;
+}
+
+/* MOBILE MENU */
+
+@media (max-width: 768px) {
+
+  .mobile-menu {
+    position: fixed;
+    top: 75px;
+    left: 15px;
+    width: 220px;
+    background: #321406;
+    padding: 20px;
+    border-radius: 12px;
+    z-index: 999;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  }
+
+  .mobile-menu a {
+    display: block;
+    padding: 12px 10px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .mobile-menu a:hover {
+    color: #ffd166;
+  }
+
+}
+
+.about-history {
+  max-width: 1000px;
+  margin: 40px auto 0;
+}
+
+.history-title {
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-size: 26px;
+  color: #8b4513;
+  margin: 35px 0 20px;
+}
+
+.about-history p {
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: justify;
+  color: #3b1f0f;
+  margin-bottom: 22px;
+}
+
+
+.language-switch {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  border: 1px solid rgba(230, 190, 120, 0.3);
+  border-radius: 25px;
+  background: #3b2112;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.language-switch button {
+  border: none;
+  border-radius: 20px;
+  padding: 8px 14px;
+  background: transparent;
+  color: #fff8e9;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.language-switch button.active {
+  background: #f5d17b;
+  color: #3b2112;
+  font-weight: 600;
+}
+
+.language-switch button:hover {
+  opacity: 0.85;
+}
+
+/* ===== FINAL PHONE LAYOUT FIX ===== */
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    height: 75px;
+    padding: 0 12px;
+    gap: 8px;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: static;
+    flex-shrink: 0;
+    font-size: 28px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .logo {
+    margin: 0;
+    flex: 1;
+    max-width: none;
+    min-width: 0;
+    gap: 6px;
+  }
+
+  .temple-logo {
+    font-size: 25px;
+    flex-shrink: 0;
+  }
+
+  .logo-divider {
+    height: 30px;
+    flex-shrink: 0;
+  }
+
+  .logo-text {
+    font-size: 10px;
+    line-height: 1.3;
+    white-space: normal;
+    overflow-wrap: break-word;
+    min-width: 0;
+  }
+
+  .navbar nav {
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 10px;
+    right: auto;
+    width: 230px;
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+    background: #321406;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 12px;
+    border-radius: 0 0 12px 12px;
+    z-index: 1001;
+  }
+
+  .navbar nav.mobile-open {
+    display: flex;
+  }
+
+  .navbar nav a {
+    width: 100%;
+    padding: 11px 8px;
+    font-size: 14px;
+    white-space: normal;
+  }
+
+  .language-switch {
+    margin-top: 8px;
+    flex-wrap: wrap;
+  }
+
+  .language-switch button {
+    width: auto;
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .temple-marquee {
+    width: 100%;
+    margin-top: 75px;
+    overflow: hidden;
+  }
+
+  .hero {
+    width: 100%;
+    min-height: auto;
+    flex-direction: column;
+    gap: 25px;
+    padding: 35px 18px 40px;
+    box-sizing: border-box;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    flex: none;
+  }
+
+  .welcome {
+    font-size: 11px;
+    letter-spacing: 1px;
+    line-height: 1.7;
+  }
+
+  .hero-content .temple-titel {
+    max-width: 100%;
+    font-size: 24px;
+    line-height: 1.25;
+    margin: 15px 0;
+    overflow-wrap: anywhere;
+  }
+
+  .temple-titel span {
+    white-space: normal;
+  }
+
+  .hero h2 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .hero p {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 100%;
+    flex: none;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 100%;
+    height: 330px;
+    object-fit: cover;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
 }
