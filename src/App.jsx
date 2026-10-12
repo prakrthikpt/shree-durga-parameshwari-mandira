@@ -12,7 +12,7 @@ import Harmonium from "./pages/activities/Harmonium";
 import Tabla from "./pages/activities/Tabla";
 import Balagokula from "./pages/activities/Balagokula";
 import Yoga from "./pages/activities/Yoga";
-import RSS from "./pages/activities/Rss";
+import Rss from "./pages/activities/Rss";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import MediaPopup from "./components/MediaPopup";
@@ -180,7 +180,7 @@ function App() {
     )}
 
     {currentPage === "rss" && (
-      <RSS
+      <Rss
         language={language}
         setSelectedImage={setSelectedImage}
       />
