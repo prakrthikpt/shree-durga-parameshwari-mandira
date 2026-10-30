@@ -15,7 +15,7 @@ function Pooja({ language }) {
       <div className="cards">
 
 
-        <div className="card">
+        {/* <div className="card">
           <div className="card-icon">🔱</div>
 
           <h3>
@@ -29,7 +29,7 @@ function Pooja({ language }) {
               ? "🌺The Navaratri Festival 2026 will be celebrated from October 11 to October 19 in the divine presence of Sri Durgaparameshwari Amma. During these sacred days, different Bhajane teams will offer devotional bhajane every evening, and devotees may offer special poojas with devotion and faith. Prasada will be served to all devotees. May these holy days be filled with devotion, prayer, spiritual joy and the divine blessings of Sri Durgaparameshwari Amma.🙏"
               : "🌺2026 ರ ನವರಾತ್ರಿ ಹಬ್ಬವನ್ನು ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ಅಮ್ಮನ ದೈವಿಕ ಸಾನ್ನಿಧ್ಯದಲ್ಲಿ ಅಕ್ಟೋಬರ್ 11 ರಿಂದ ಅಕ್ಟೋಬರ್ 19 ರವರೆಗೆ ಆಚರಿಸಲಾಗುವುದು. ಈ ಪವಿತ್ರ ದಿನಗಳಲ್ಲಿ, ವಿಭಿನ್ನ ಭಜನೆ ತಂಡಗಳು ಪ್ರತಿದಿನ ಸಂಜೆ ಭಕ್ತಿಪೂರ್ವಕ ಭಜನೆಗಳನ್ನು ಸಲ್ಲಿಸುತ್ತವೆ, ಮತ್ತು ಭಕ್ತರು ಭಕ್ತಿ ಮತ್ತು ನಂಬಿಕೆಯಿಂದ ವಿಶೇಷ ಪೂಜೆಗಳನ್ನು ಸಲ್ಲಿಸಬಹುದು. ಪ್ರಸಾದವನ್ನು ಎಲ್ಲಾ ಭಕ್ತರಿಗೆ ನೀಡಲಾಗುತ್ತದೆ. ಈ ಪವಿತ್ರ ದಿನಗಳು ಭಕ್ತಿ, ಪ್ರಾರ್ಥನೆ, ಆಧ್ಯಾತ್ಮಿಕ ಸಂತೋಷ ಮತ್ತು ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ಅಮ್ಮನ ದೈವಿಕ ಆಶೀರ್ವಾದಗಳಿಂದ ತುಂಬಿರಲಿ.🙏"}
           </p>
-        </div>
+        </div> */}
 
         <div className="card">
           <div className="card-icon">🌺</div>

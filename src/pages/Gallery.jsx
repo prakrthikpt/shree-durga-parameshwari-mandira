@@ -20,6 +20,126 @@ function Gallery({
 
       <div className="gallery-grid">
 
+         {/* Photo 53 */}
+        <div
+          className="gallery-item"
+          onClick={() => setSelectedImage("/images/gallery53.jpeg")}
+        >
+          <img
+            src="/images/gallery53.jpeg"
+            alt={
+              language === "en"
+                ? "Sri Durgaparameshwari Temple"
+                : "ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ಮಂದಿರ"
+            }
+          />
+        </div>
+
+        {/* Photo 46 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery46.jpeg")}
+      >
+        <img
+          src="/images/gallery46.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+        {/* Photo 43 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery43.jpeg")}
+      >
+        <img
+          src="/images/gallery43.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 45 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery45.jpeg")}
+      >
+        <img
+          src="/images/gallery45.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+         {/* Photo51  */}
+        <div
+          className="gallery-item"
+          onClick={() => setSelectedImage("/images/gallery51.jpeg")}
+        >
+          <img
+            src="/images/gallery51.jpeg"
+            alt={
+              language === "en"
+                ? "Sri Durgaparameshwari Temple"
+                : "ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ಮಂದಿರ"
+            }
+          />
+        </div>
+
+         {/* Photo 52 */}
+        <div
+          className="gallery-item"
+          onClick={() => setSelectedImage("/images/gallery52.jpeg")}
+        >
+          <img
+            src="/images/gallery52.jpeg"
+            alt={
+              language === "en"
+                ? "Sri Durgaparameshwari Temple"
+                : "ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ಮಂದಿರ"
+            }
+          />
+        </div>
+
+         {/* Photo 35 */}
+        <div
+          className="gallery-item"
+          onClick={() => setSelectedImage("/images/gallery35.jpeg")}
+        >
+          <img
+            src="/images/gallery35.jpeg"
+            alt={
+              language === "en"
+                ? "Sri Durgaparameshwari Temple"
+                : "ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ಮಂದಿರ"
+            }
+          />
+        </div>
+
+        {/* Photo 34 */}
+        <div
+          className="gallery-item"
+          onClick={() => setSelectedImage("/images/gallery34.jpeg")}
+        >
+          <img
+            src="/images/gallery34.jpeg"
+            alt={
+              language === "en"
+                ? "Sri Durgaparameshwari Temple"
+                : "ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ಮಂದಿರ"
+            }
+          />
+        </div>
+
         {/* Photo 1 */}
         <div
           className="gallery-item"
@@ -265,6 +385,186 @@ function Gallery({
       >
         <img
           src="/images/gallery17.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 37 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery37.jpeg")}
+      >
+        <img
+          src="/images/gallery37.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 41 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery41.jpeg")}
+      >
+        <img
+          src="/images/gallery41.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 50 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery50.jpeg")}
+      >
+        <img
+          src="/images/gallery50.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 44 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery44.jpeg")}
+      >
+        <img
+          src="/images/gallery44.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 47 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery47.jpeg")}
+      >
+        <img
+          src="/images/gallery47.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 48 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery48.jpeg")}
+      >
+        <img
+          src="/images/gallery48.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 49 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery49.jpeg")}
+      >
+        <img
+          src="/images/gallery49.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 42 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery42.jpeg")}
+      >
+        <img
+          src="/images/gallery42.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 40 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery40.jpeg")}
+      >
+        <img
+          src="/images/gallery40.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 36 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery36.jpeg")}
+      >
+        <img
+          src="/images/gallery36.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 38 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery38.jpeg")}
+      >
+        <img
+          src="/images/gallery38.jpeg"
+          alt={
+            language === "en"
+              ? "Mandira Devotees"
+              : "ಮಂದಿರದ ಭಕ್ತರು"
+          }
+        />
+      </div>
+
+      {/* Photo 39 */}
+      <div
+        className="gallery-item"
+        onClick={() => setSelectedImage("/images/gallery39.jpeg")}
+      >
+        <img
+          src="/images/gallery39.jpeg"
           alt={
             language === "en"
               ? "Mandira Devotees"

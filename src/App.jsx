@@ -36,7 +36,11 @@ function App() {
       <header className="navbar">
 
           <div className="logo">
-                      <span className="temple-logo">🛕</span>
+                <img
+                  src="/images/temple-logo.png"
+                  alt="Temple Logo"
+                  className="temple-logo"
+                />
             <span className="logo-divider"></span>
 
                       <span className="logo-text">
