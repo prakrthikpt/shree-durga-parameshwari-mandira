@@ -20,6 +20,66 @@ function Gallery({
 
       <div className="gallery-grid">
 
+        {/* Photo 57 */}
+        <div
+          className="gallery-item"
+          onClick={() => setSelectedImage("/images/gallery57.jpeg")}
+        >
+          <img
+            src="/images/gallery57.jpeg"
+            alt={
+              language === "en"
+                ? "Sri Durgaparameshwari Temple"
+                : "ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ಮಂದಿರ"
+            }
+          />
+        </div>
+
+        {/* Photo 56 */}
+        <div
+          className="gallery-item"
+          onClick={() => setSelectedImage("/images/gallery56.jpeg")}
+        >
+          <img
+            src="/images/gallery56.jpeg"
+            alt={
+              language === "en"
+                ? "Sri Durgaparameshwari Temple"
+                : "ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ಮಂದಿರ"
+            }
+          />
+        </div>
+
+        {/* Photo 55 */}
+        <div
+          className="gallery-item"
+          onClick={() => setSelectedImage("/images/gallery55.jpeg")}
+        >
+          <img
+            src="/images/gallery55.jpeg"
+            alt={
+              language === "en"
+                ? "Sri Durgaparameshwari Temple"
+                : "ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ಮಂದಿರ"
+            }
+          />
+        </div>
+
+        {/* Photo 54 */}
+        <div
+          className="gallery-item"
+          onClick={() => setSelectedImage("/images/gallery54.jpeg")}
+        >
+          <img
+            src="/images/gallery54.jpeg"
+            alt={
+              language === "en"
+                ? "Sri Durgaparameshwari Temple"
+                : "ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ಮಂದಿರ"
+            }
+          />
+        </div>
+
          {/* Photo 53 */}
         <div
           className="gallery-item"
