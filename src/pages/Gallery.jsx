@@ -20,6 +20,111 @@ function Gallery({
 
       <div className="gallery-grid">
 
+        {/* Photo 64 */}
+        <div
+          className="gallery-item"
+          onClick={() => setSelectedImage("/images/gallery64.jpeg")}
+        >
+          <img
+            src="/images/gallery64.jpeg"
+            alt={
+              language === "en"
+                ? "Sri Durgaparameshwari Temple"
+                : "ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ಮಂದಿರ"
+            }
+          />
+        </div>
+
+        {/* Photo 63 */}
+        <div
+          className="gallery-item"
+          onClick={() => setSelectedImage("/images/gallery63.jpeg")}
+        >
+          <img
+            src="/images/gallery63.jpeg"
+            alt={
+              language === "en"
+                ? "Sri Durgaparameshwari Temple"
+                : "ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ಮಂದಿರ"
+            }
+          />
+        </div>
+
+        {/* Photo 62 */}
+        <div
+          className="gallery-item"
+          onClick={() => setSelectedImage("/images/gallery62.jpeg")}
+        >
+          <img
+            src="/images/gallery62.jpeg"
+            alt={
+              language === "en"
+                ? "Sri Durgaparameshwari Temple"
+                : "ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ಮಂದಿರ"
+            }
+          />
+        </div>
+
+        {/* Photo 61 */}
+        <div
+          className="gallery-item"
+          onClick={() => setSelectedImage("/images/gallery61.jpeg")}
+        >
+          <img
+            src="/images/gallery61.jpeg"
+            alt={
+              language === "en"
+                ? "Sri Durgaparameshwari Temple"
+                : "ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ಮಂದಿರ"
+            }
+          />
+        </div>
+
+        {/* Photo 60 */}
+        <div
+          className="gallery-item"
+          onClick={() => setSelectedImage("/images/gallery60.jpeg")}
+        >
+          <img
+            src="/images/gallery60.jpeg"
+            alt={
+              language === "en"
+                ? "Sri Durgaparameshwari Temple"
+                : "ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ಮಂದಿರ"
+            }
+          />
+        </div>
+
+        {/* Photo 59 */}
+        <div
+          className="gallery-item"
+          onClick={() => setSelectedImage("/images/gallery59.jpeg")}
+        >
+          <img
+            src="/images/gallery59.jpeg"
+            alt={
+              language === "en"
+                ? "Sri Durgaparameshwari Temple"
+                : "ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ಮಂದಿರ"
+            }
+          />
+        </div>
+
+        {/* Photo 58 */}
+        <div
+          className="gallery-item"
+          onClick={() => setSelectedImage("/images/gallery58.jpeg")}
+        >
+          <img
+            src="/images/gallery58.jpeg"
+            alt={
+              language === "en"
+                ? "Sri Durgaparameshwari Temple"
+                : "ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ಮಂದಿರ"
+            }
+          />
+        </div>
+
         {/* Photo 57 */}
         <div
           className="gallery-item"

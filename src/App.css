@@ -281,6 +281,93 @@ body {
   border-radius: 20px;
 }
 
+/* ================= BHOOMI POOJA ================= */
+
+.bhoomi-pooja-section {
+  padding: 60px 8%;
+  background: #fffaf0;
+}
+
+.bhoomi-pooja-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  padding: 30px;
+  background: #fff1d5;
+  border: 2px solid #e8c36b;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(59, 31, 15, 0.12);
+}
+
+.bhoomi-pooja-image {
+  width: 100%;
+  text-align: center;
+}
+
+.bhoomi-pooja-image img {
+  width: 100%;
+  max-width: 480px;
+  max-height: 650px;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+  margin: auto;
+}
+
+.bhoomi-pooja-content {
+  text-align: center;
+  color: #3b1f0f;
+}
+
+.bhoomi-subtitle {
+  color: #b77a16;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.bhoomi-pooja-content h2 {
+  font-family: "Cinzel", serif;
+  font-size: 38px;
+  color: #a52a2a;
+  margin: 15px 0 5px;
+}
+
+.bhoomi-pooja-content h3 {
+  font-size: 23px;
+  color: #3b1f0f;
+  margin-bottom: 20px;
+}
+
+.bhoomi-pooja-content p {
+  color: #3b1f0f;
+  line-height: 1.8;
+}
+
+.bhoomi-details {
+  background: #fffaf0;
+  border: 1px solid #e8c36b;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.bhoomi-details p {
+  margin: 8px 0;
+}
+
+.bhoomi-invitation {
+  margin: 20px 0;
+}
+
+.bhoomi-pooja-content h4 {
+  color: #a52a2a;
+  margin-top: 25px;
+}
+
+
 /* ================= COMMON SECTION ================= */
 
 .section {
@@ -1161,6 +1248,37 @@ footer p {
     max-width: 400px;
     height: 400px;
   }
+
+  /* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .bhoomi-pooja-section {
+    padding: 35px 15px;
+  }
+
+  .bhoomi-pooja-container {
+    grid-template-columns: 1fr;
+    padding: 18px;
+    gap: 20px;
+  }
+
+  .bhoomi-pooja-image img {
+    max-height: 550px;
+  }
+
+  .bhoomi-pooja-content h2 {
+    font-size: 30px;
+  }
+
+  .bhoomi-pooja-content h3 {
+    font-size: 20px;
+  }
+
+  .bhoomi-pooja-content p {
+    font-size: 14px;
+  }
+}
 
   /* SECTIONS */
 
