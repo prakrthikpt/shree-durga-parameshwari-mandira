@@ -281,14 +281,14 @@ body {
   border-radius: 20px;
 }
 
-/* ================= BHOOMI POOJA ================= */
+/* ================= UPCOMING EVENTS ================= */
 
-.bhoomi-pooja-section {
+.upcoming-events-section {
   padding: 60px 8%;
   background: #fffaf0;
 }
 
-.bhoomi-pooja-container {
+.upcoming-events-container {
   max-width: 1100px;
   margin: auto;
   display: grid;
@@ -302,12 +302,24 @@ body {
   box-shadow: 0 5px 20px rgba(59, 31, 15, 0.12);
 }
 
-.bhoomi-pooja-image {
+.upcoming-event-message {
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 35px 20px;
+  box-sizing: border-box;
+  color: #a52a2a;
+  font-family: 'Cinzel', serif;
+}
+
+.event-image {
   width: 100%;
   text-align: center;
 }
 
-.bhoomi-pooja-image img {
+.event-image img {
   width: 100%;
   max-width: 480px;
   max-height: 650px;
@@ -317,36 +329,36 @@ body {
   margin: auto;
 }
 
-.bhoomi-pooja-content {
+.upcoming-events-content {
   text-align: center;
   color: #3b1f0f;
 }
 
-.bhoomi-subtitle {
+.upcoming-events-subtitle {
   color: #b77a16;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
-.bhoomi-pooja-content h2 {
+.upcoming-events-content h2 {
   font-family: "Cinzel", serif;
   font-size: 38px;
   color: #a52a2a;
   margin: 15px 0 5px;
 }
 
-.bhoomi-pooja-content h3 {
+.upcoming-events-content h3 {
   font-size: 23px;
   color: #3b1f0f;
   margin-bottom: 20px;
 }
 
-.bhoomi-pooja-content p {
+.upcoming-events-content p {
   color: #3b1f0f;
   line-height: 1.8;
 }
 
-.bhoomi-details {
+.upcoming-events-details {
   background: #fffaf0;
   border: 1px solid #e8c36b;
   border-radius: 12px;
@@ -354,15 +366,15 @@ body {
   margin: 20px 0;
 }
 
-.bhoomi-details p {
+.upcoming-events-details p {
   margin: 8px 0;
 }
 
-.bhoomi-invitation {
+.upcoming-events-invitation {
   margin: 20px 0;
 }
 
-.bhoomi-pooja-content h4 {
+.upcoming-events-content h4 {
   color: #a52a2a;
   margin-top: 25px;
 }
@@ -1253,29 +1265,29 @@ footer p {
 
 @media (max-width: 768px) {
 
-  .bhoomi-pooja-section {
+  .upcoming-events-section {
     padding: 35px 15px;
   }
 
-  .bhoomi-pooja-container {
+  .upcoming-events-container {
     grid-template-columns: 1fr;
     padding: 18px;
     gap: 20px;
   }
 
-  .bhoomi-pooja-image img {
+  .event-image img {
     max-height: 550px;
   }
 
-  .bhoomi-pooja-content h2 {
+  .upcoming-events-content h2 {
     font-size: 30px;
   }
 
-  .bhoomi-pooja-content h3 {
+  .upcoming-events-content h3 {
     font-size: 20px;
   }
 
-  .bhoomi-pooja-content p {
+  .upcoming-events-content p {
     font-size: 14px;
   }
 }

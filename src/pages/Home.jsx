@@ -81,23 +81,33 @@ function Home({ language, setCurrentPage }) {
 
     </section>
 
-          
-      <section className="bhoomi-pooja-section">
+      
+      <section className="upcoming-events-section">
 
-        <div className="bhoomi-pooja-container">
+        <div className="upcoming-events-container">
 
-          {/* Bhoomi Pooja Poster */}
-          <div className="bhoomi-pooja-image">
+          <div className="upcoming-events-message">
+            <h2>
+              {language === "en"
+                ? "Upcoming Event Will be Announced Soon"
+                : "ಮುಂಬರುವ ಕಾರ್ಯಕ್ರಮದ ದಿನಾಂಕವನ್ನು ಶೀಘ್ರದಲ್ಲೇ ಪ್ರಕಟಿಸಲಾಗುವುದು."}
+            </h2>
+          </div>
+
+
+          {/* Upcoming Event Poster 
+          <div className="event-image">
             <img
               src="/images/bhoomi-pooja.jpeg"
               alt="Bhoomi Pooja invitation"
             />
           </div>
+            */}
 
-          {/* Announcement Details */}
-          <div className="bhoomi-pooja-content">
+          {/* Announcement Details 
+          <div className="upcoming-events-content">
 
-            <span className="bhoomi-subtitle">
+            <span className="upcoming-events-subtitle">
               {language === "en"
                 ? "A DIVINE BEGINNING"
                 : "ದೈವಿಕ ಶುಭಾರಂಭ"}
@@ -121,7 +131,7 @@ function Home({ language, setCurrentPage }) {
                 : "ನಮ್ಮ ಬಹುದಿನಗಳ ಕನಸಾದ ಮಂದಿರದ ಸಭಾಭವನದ ನಿರ್ಮಾಣ ಕಾರ್ಯಕ್ಕೆ ಶುಭಾರಂಭ."}
             </p>
 
-            <div className="bhoomi-details">
+            <div className="upcoming-events-details">
 
               <p>
                 <strong>
@@ -149,7 +159,7 @@ function Home({ language, setCurrentPage }) {
 
             </div>
 
-            <p className="bhoomi-invitation">
+            <p className="upcoming-events-invitation">
               {language === "en"
                 ? "All committee members and devotees of our village are warmly invited to attend and participate in this auspicious occasion and make the programme a success."
                 : "ಸಮಿತಿಯ ಎಲ್ಲಾ ಸದಸ್ಯರು ಹಾಗೂ ಊರಿನ ಸಮಸ್ತ ಭಕ್ತಾಭಿಮಾನಿಗಳು ಆಗಮಿಸಿ ಈ ಶುಭ ಕಾರ್ಯಕ್ರಮದಲ್ಲಿ ಭಾಗವಹಿಸಿ, ಕಾರ್ಯಕ್ರಮವನ್ನು ಯಶಸ್ವಿಗೊಳಿಸಬೇಕಾಗಿ ವಿನಂತಿ."}
@@ -166,13 +176,15 @@ function Home({ language, setCurrentPage }) {
             </p>
 
           </div>
+          */}
+              
 
         </div>
-
+        
       </section>
-
-    </>
     
+    
+    </> 
   );
 }
 
