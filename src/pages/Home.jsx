@@ -86,84 +86,98 @@ function Home({ language, setCurrentPage }) {
 
         <div className="upcoming-events-container">
 
-          <div className="upcoming-events-message">
+          {/*<div className="upcoming-events-message">
             <h2>
               {language === "en"
                 ? "Upcoming Event Will be Announced Soon"
                 : "ಮುಂಬರುವ ಕಾರ್ಯಕ್ರಮದ ದಿನಾಂಕವನ್ನು ಶೀಘ್ರದಲ್ಲೇ ಪ್ರಕಟಿಸಲಾಗುವುದು."}
             </h2>
           </div>
+          */}
 
 
-          {/* Upcoming Event Poster 
+          {/* Upcoming Event Poster */}
           <div className="event-image">
             <img
-              src="/images/bhoomi-pooja.jpeg"
-              alt="Bhoomi Pooja invitation"
+              src="/images/classes-biggins.jpeg"
+              alt="Reopening class for children and adults"
             />
           </div>
-            */}
 
-          {/* Announcement Details 
+          {/* Announcement Details */}
           <div className="upcoming-events-content">
 
             <span className="upcoming-events-subtitle">
               {language === "en"
-                ? "A DIVINE BEGINNING"
-                : "ದೈವಿಕ ಶುಭಾರಂಭ"}
+                ? "🎶🌺 THE MUSICAL JOURNEY CONTINUES! 🌺🎶"
+                : "🎶🌺 ಸಂಗೀತ ಕಲಿಕೆಯ ಪಯಣ ಮುಂದುವರಿಯುತ್ತಿದೆ! 🌺🎶"}
             </span>
 
             <h2>
               {language === "en"
-                ? "Bhoomi Pooja"
-                : "ಭೂಮಿ ಪೂಜೆ"}
+                ? "HARMONIUM & TABLA MUSIC CLASSES"
+                : "ಹಾರ್ಮೋನಿಯಂ ಮತ್ತು ತಬಲಾ ಸಂಗೀತ ತರಗತಿಗಳು"}
             </h2>
 
             <h3>
               {language === "en"
-                ? "A New Beginning for Our Mandira"
-                : "ನಮ್ಮ ಮಂದಿರದ ಹೊಸ ಶುಭಾರಂಭ"}
+                ? "Learn Music, Develop Talent & Keep Our Traditions Alive!"
+                : "ಸಂಗೀತದ ಲಯದಲ್ಲಿ ಕಲಿಯೋಣ, ಪ್ರತಿಭೆಯನ್ನು ಬೆಳೆಸೋಣ!"}
             </h3>
 
             <p>
               {language === "en"
-                ? "The auspicious beginning of the construction of our long-awaited Mandira Sabha Bhavana."
-                : "ನಮ್ಮ ಬಹುದಿನಗಳ ಕನಸಾದ ಮಂದಿರದ ಸಭಾಭವನದ ನಿರ್ಮಾಣ ಕಾರ್ಯಕ್ಕೆ ಶುಭಾರಂಭ."}
+                ? "Sri Durgaparameshwari Seva Samithi (R), Padavu Mugrodi, has already been conducting Harmonium and Tabla music classes. Continuing this initiative, a new batch for interested students will commence from 26th November 2026."
+                : "ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ಸೇವಾ ಸಮಿತಿ (ರಿ), ಪದವು ಮುಗ್ರೋಡಿ ವತಿಯಿಂದ ಈಗಾಗಲೇ ಹಾರ್ಮೋನಿಯಂ ಮತ್ತು ತಬಲಾ ಸಂಗೀತ ತರಗತಿಗಳು ನಡೆಯುತ್ತಿದ್ದು, ಈ ತರಗತಿಗಳನ್ನು ಮುಂದುವರಿಸುವುದರೊಂದಿಗೆ ಹೊಸ ವಿದ್ಯಾರ್ಥಿಗಳಿಗಾಗಿ ದಿನಾಂಕ 26-11-2026 ರಿಂದ ಹೊಸ ಬ್ಯಾಚ್ ಪ್ರಾರಂಭವಾಗಲಿದೆ."}
             </p>
+
+            <p className="upcoming-events-invitation">
+                {language === "en"
+                  ? "This is a wonderful opportunity for children and students who are interested in learning music and developing their musical talents.s."
+                  : "ಸಂಗೀತ ಕಲಿಯಲು ಆಸಕ್ತಿ ಹೊಂದಿರುವ ಮಕ್ಕಳು ಹಾಗೂ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಇದೊಂದು ಉತ್ತಮ ಅವಕಾಶವಾಗಿದೆ. ತಮ್ಮ ಮಕ್ಕಳನ್ನು ಸಂಗೀತ ತರಗತಿಗಳಿಗೆ ಸೇರಿಸಲು ಆಸಕ್ತಿ ಹೊಂದಿರುವ ಪೋಷಕರು ಈ ಅವಕಾಶದ ಸದುಪಯೋಗ ಪಡೆದುಕೊಳ್ಳಬೇಕಾಗಿ ವಿನಂತಿ."}
+            </p>
+
+            <h3>
+              {language === "en"
+                ? "Interested students and parents are warmly welcome to attend the classes and make use of this opportunity."
+                : "ಆಸಕ್ತ ವಿದ್ಯಾರ್ಥಿಗಳು ಹಾಗೂ ಪೋಷಕರು ಆತ್ಮೀಯವಾಗಿ ಆಗಮಿಸಬೇಕಾಗಿ ಕೋರುತ್ತೇವೆ."}
+            </h3>
 
             <div className="upcoming-events-details">
 
-              <p>
                 <strong>
-                  {language === "en" ? "Date: " : "ದಿನಾಂಕ: "}
+                  {language === "en" 
+                   ? "FOR MORE INFORMATION, CONTACT:" 
+                   : "ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ಸಂಪರ್ಕಿಸಿ: "}
                 </strong>
-                {language === "en"
-                  ? "18 November 2026, Wednesday"
-                  : "18 ನವೆಂಬರ್ 2026, ಬುಧವಾರ"}
-              </p>
-
-              <p>
-                <strong>
-                  {language === "en" ? "Time: " : "ಸಮಯ: "}
-                </strong>
-                {language === "en"
-                  ? "9:21 AM"
-                  : "ಬೆಳಿಗ್ಗೆ 9:21ಕ್ಕೆ"}
-              </p>
 
               <p>
                 {language === "en"
-                  ? "Auspicious Muhurta"
-                  : "ಶುಭ ಮುಹೂರ್ತ"}
+                  ? "Dinesh Poojary : 9632093970"
+                  : "ದಿನೇಶ್ ಪೂಜಾರಿ : 9632093970"}
+              </p>
+
+              <p>
+                
+                {language === "en"
+                  ? "Rajesh Kundar : 9481180491"
+                  : "ರಾಜೇಶ್ ಕುಂದರ್ : 9481180491"}
+              </p>
+
+              <p>
+                {language === "en"
+                  ? "Harusha Sudhakar Shetty : 8884030109"
+                  : "ಹರುಷ ಸುಧಾಕರ್ ಶೆಟ್ಟಿ : 8884030109"}
+              </p>
+
+              <p>
+                {language === "en"
+                  ? "Harina Harish : 9739891168"
+                  : "ಹರಿಣಾ ಹರೀಶ್ : 9739891168"}
               </p>
 
             </div>
 
-            <p className="upcoming-events-invitation">
-              {language === "en"
-                ? "All committee members and devotees of our village are warmly invited to attend and participate in this auspicious occasion and make the programme a success."
-                : "ಸಮಿತಿಯ ಎಲ್ಲಾ ಸದಸ್ಯರು ಹಾಗೂ ಊರಿನ ಸಮಸ್ತ ಭಕ್ತಾಭಿಮಾನಿಗಳು ಆಗಮಿಸಿ ಈ ಶುಭ ಕಾರ್ಯಕ್ರಮದಲ್ಲಿ ಭಾಗವಹಿಸಿ, ಕಾರ್ಯಕ್ರಮವನ್ನು ಯಶಸ್ವಿಗೊಳಿಸಬೇಕಾಗಿ ವಿನಂತಿ."}
-            </p>
 
             <h4>
               Sri Durgaparameshwari Seva Samithi (R)
@@ -171,12 +185,11 @@ function Home({ language, setCurrentPage }) {
 
             <p>
               {language === "en"
-                ? "Padavu, Mugrodi"
-                : "ಪದವು, ಮುಗ್ರೋಡಿ"}
+                ? "Learn Music • Nurture Talent • Preserve Our Culture!"
+                : "ಸಂಗೀತ ಕಲಿಯೋಣ • ಪ್ರತಿಭೆ ಬೆಳೆಸೋಣ • ನಮ್ಮ ಸಂಸ್ಕೃತಿಯನ್ನು ಉಳಿಸೋಣ!"}
             </p>
 
           </div>
-          */}
               
 
         </div>

@@ -63,6 +63,21 @@ function Bhajan({ language, setSelectedImage }) {
           />
         </div>
 
+        {/* Bhajan Image 4 */}
+        <div
+          className="gallery-item"
+          onClick={() => setSelectedImage("/images/classes-biggins.jpeg")}
+        >
+          <img
+            src="/images/classes-biggins.jpeg"
+            alt={
+              language === "en"
+                ? "Bhajan"
+                : "ಭಜನೆ"
+            }
+          />
+        </div>
+
       </div>
 
     </section>

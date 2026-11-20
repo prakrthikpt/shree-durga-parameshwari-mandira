@@ -63,6 +63,21 @@ function Tabla({ language, setSelectedImage }) {
           />
         </div>
 
+        {/* Tabla Image 4 */}
+        <div
+          className="gallery-item"
+          onClick={() => setSelectedImage("/images/classes-biggins.jpeg")}
+        >
+          <img
+            src="/images/classes-biggins.jpeg"
+            alt={
+              language === "en"
+                ? "Tabla"
+                : "ತಬಲಾ"
+            }
+          />
+        </div>
+
       </div>
 
     </section>

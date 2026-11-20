@@ -20,6 +20,21 @@ function Gallery({
 
       <div className="gallery-grid">
 
+        {/* Photo classes-biggins */}
+        <div
+          className="gallery-item"
+          onClick={() => setSelectedImage("/images/classes-biggins.jpeg")}
+        >
+          <img
+            src="/images/classes-biggins.jpeg"
+            alt={
+              language === "en"
+                ? "Sri Durgaparameshwari Temple"
+                : "ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ಮಂದಿರ"
+            }
+          />
+        </div>
+
         {/* Photo 71 */}
         <div
           className="gallery-item"

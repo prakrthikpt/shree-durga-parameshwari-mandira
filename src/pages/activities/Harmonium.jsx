@@ -63,6 +63,21 @@ function Harmonium({ language, setSelectedImage }) {
           />
         </div>
 
+        {/* Harmonium Image 4 */}
+        <div
+          className="gallery-item"
+          onClick={() => setSelectedImage("/images/classes-biggins.jpeg")}
+        >
+          <img
+            src="/images/classes-biggins.jpeg"
+            alt={
+              language === "en"
+                ? "Harmonium"
+                : "ಹಾರ್ಮೋನಿಯಂ"
+            }
+          />
+        </div>
+
       </div>
 
     </section>
